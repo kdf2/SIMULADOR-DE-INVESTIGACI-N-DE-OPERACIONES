@@ -10,6 +10,10 @@ destinos2=0
 origenes2=0
 res = []
 val = []
+origenes=0
+destinos=0
+oferta=0
+demanda=0
 def getValores(opc,ORI,DES):
     global valores,destinos2,origenes2
     if(opc==1):
@@ -227,7 +231,8 @@ def resultado_final(resulatos,multiplo):
         print(f"\t\t\t\t\t\t\t{resulatos[i]} * {multiplo[i]}")
     print(f"\t\t\t\t\t\tRESULTADO FINAL: {sumatotal}")
             
-def main():
+def main(): 
+    global origenes,destinos,oferta,demanda
     origenes=int(input(Fore.GREEN+"\t\t\t\tIntroducir el numero de origenes.  "))
     destinos=int(input(Fore.GREEN+"\t\t\t\tIntroducir el numero de destino.   "))
     oferta=getOferta(origenes)
